@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Onboarding.Onboarding"
+        android:background="@color/white">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--    <Button-->
+        <!--        android:id="@+id/button"-->
+        <!--        android:layout_width="277dp"-->
+        <!--        android:layout_height="42dp"-->
+        <!--        android:layout_marginBottom="84dp"-->
+        <!--        android:background="@drawable/button_backgroud"-->
+        <!--        android:text="Sign Up"-->
+        <!--        android:textColor="@color/white"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/dots_onboarding"-->
+        <!--        app:layout_constraintVertical_bias="0.777" />-->
+
+
+
+        <RelativeLayout
+            android:id="@+id/button"
+            android:layout_width="277dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_backgroud"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dots_onboarding"
+            app:layout_constraintVertical_bias="0.1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+        <!--    <Button-->
+        <!--        android:id="@+id/button2"-->
+        <!--        android:layout_width="277dp"-->
+        <!--        android:layout_height="42dp"-->
+        <!--        android:text="Login"-->
+        <!--        android:background="@drawable/violet_button"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        android:textColor="@color/theme_color"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/button"-->
+        <!--        app:layout_constraintVertical_bias="0.32" />-->
+
+
+        <RelativeLayout
+            android:id="@+id/button2"
+            android:layout_width="277dp"
+            android:layout_height="50dp"
+            android:background="@drawable/violet_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Login"
+                android:textColor="@color/theme_color"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+        <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--    app:layout_constraintStart_toStartOf="parent"-->
+        <!--    app:layout_constraintTop_toBottomOf="@+id/button"-->
+        <!--    app:layout_constraintVertical_bias="0.32"-->
+
+        <LinearLayout
+            android:id="@+id/dots_onboarding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager2">
+
+            <include layout="@layout/onboarding_dots"
+                android:id="@+id/dot1"/>
+
+            <include layout="@layout/onboarding_dots"
+                android:id="@+id/dot2"/>
+
+            <include layout="@layout/onboarding_dots"
+                android:id="@+id/dot3"/>
+
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
