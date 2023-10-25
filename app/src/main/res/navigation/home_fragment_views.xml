@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.expenseapplication.HomeFragment"
+        android:name="com.example.expenseapplication.MainPageFragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/transactionFragment2"
-        android:name="com.example.expenseapplication.transactionFragment"
+        android:name="com.example.expenseapplication.MainPageFragments.transactionFragment"
         android:label="fragment_transaction2"
         tools:layout="@layout/fragment_transaction2" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/budgetFragment"
-        android:name="com.example.expenseapplication.BudgetFragment"
+        android:name="com.example.expenseapplication.MainPageFragments.BudgetFragment"
         android:label="fragment_budget"
         tools:layout="@layout/fragment_budget" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.expenseapplication.ProfileFragment"
+        android:name="com.example.expenseapplication.MainPageFragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action

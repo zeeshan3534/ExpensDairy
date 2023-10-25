@@ -3,10 +3,10 @@ package com.example.expenseapplication.Onboarding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import androidx.viewpager2.widget.ViewPager2
+import com.example.expenseapplication.Adaptors.OnboardingAdapter
 import com.example.expenseapplication.Authentication.AuthenticaitonActivity
 import com.example.expenseapplication.Models.onBoardingItems
 import com.example.expenseapplication.R

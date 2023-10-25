@@ -4,7 +4,6 @@
     <corners android:radius="10dp" />
 
 
-
     <solid android:color="@color/violet20"/>
     <!-- Set radius to 0 for square shape -->
 </shape>

@@ -51,6 +51,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.4")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.4")
+    implementation("com.google.firebase:firebase-database:20.3.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -59,7 +60,7 @@ dependencies {
 
     //Firebase Dependenceies
     implementation("com.google.firebase:firebase-auth-ktx:22.1.2")
-    implementation("com.google.firebase:firebase-database-ktx:20.2.2")
+//    implementation("com.google.firebase:firebase-database-ktx:20.2.2")
 //    implementation ("com.google.firebase:firebase-analytics")
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-firestore-ktx")
@@ -101,6 +102,14 @@ dependencies {
     implementation("com.android.volley:volley:1.2.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
 
+
+    ////Circle Image view
+
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+
+    ///Shimmer Effect
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
 
 
 }

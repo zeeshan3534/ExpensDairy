@@ -1,4 +1,4 @@
-package com.example.expenseapplication.Onboarding
+package com.example.expenseapplication.Adaptors
 
 import android.view.LayoutInflater
 import android.view.View

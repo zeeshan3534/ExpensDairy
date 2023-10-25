@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment"
+    tools:context=".MainPageFragments.ProfileFragment"
     android:orientation="vertical"
     android:background="@color/md_grey_100"
     android:paddingTop="30dp">
@@ -162,6 +162,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
+                android:id="@+id/Logout"
 
                 >
 

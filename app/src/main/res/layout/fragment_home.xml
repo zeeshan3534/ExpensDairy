@@ -13,7 +13,7 @@
         android:background="@color/white"
         android:orientation="vertical"
         android:padding="10dp"
-        tools:context=".HomeFragment">
+        tools:context=".MainPageFragments.HomeFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -428,6 +428,14 @@
             </RelativeLayout>
 
         </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/showrecent_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/home_adaptor_view"
+            android:layout_marginBottom="50dp"/>
 
 
 

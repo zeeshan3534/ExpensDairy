@@ -63,6 +63,9 @@ class RegisterFragment : Fragment() {
         }
         binding.signUpButton.setOnClickListener {
 
+            binding.signUpButton.visibility = View.INVISIBLE
+            val progressBar = binding.loadingProgressBar
+            progressBar.visibility = View.VISIBLE
             name = binding.editText.text.toString()
             email = binding.editText3.text.toString()
             phoneNumber = binding.editText4.text.toString()
@@ -89,7 +92,8 @@ class RegisterFragment : Fragment() {
                         val userData = hashMapOf(
                             "name" to "${name}",
                             "email" to "${email}",
-                            "phoneNumber" to "${phoneNumber}"
+                            "phoneNumber" to "${phoneNumber}",
+                            "categoryName" to "Category Name"
                         )
 
 
@@ -100,8 +104,10 @@ class RegisterFragment : Fragment() {
                         userRef.set(userData)
                             .addOnSuccessListener {
                                 Toast.makeText(requireContext(),"Data Added SuccessFully",Toast.LENGTH_LONG).show()
+                                progressBar.visibility = View.GONE
                             }
                             .addOnFailureListener {
+                                progressBar.visibility = View.GONE
                                 Toast.makeText(requireContext(),it.message.toString(),Toast.LENGTH_LONG).show()
                             }
                     }

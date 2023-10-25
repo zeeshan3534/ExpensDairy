@@ -33,7 +33,7 @@ class LoginFragment : Fragment() {
     ): View? {
 
         binding = FragmentLoginBinding.inflate(layoutInflater)
-
+        val progressBar = binding.loadingProgressBar
         firebaseAuth = FirebaseAuth.getInstance()
 
 
@@ -59,13 +59,18 @@ class LoginFragment : Fragment() {
 
         ////login Functionality
         binding.login.setOnClickListener {
+            progressBar.visibility = View.VISIBLE
+            binding.login.visibility = View.INVISIBLE
             val email = binding.editText.text.toString()
             val password = binding.editText3.text.toString()
 
             if(email.isNotEmpty() && password.isNotEmpty()){
                 firebaseAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener {
+                        progressBar.visibility = View.GONE
                         startActivity(Intent(requireContext(),MainActivity::class.java))
+
                 }.addOnFailureListener { error->
+                    progressBar.visibility = View.GONE
                     Toast.makeText(requireContext(),error.message.toString(),Toast.LENGTH_LONG).show()
                 }
 //                    .addOnCompleteListener { task->
